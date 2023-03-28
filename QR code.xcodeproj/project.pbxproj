@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		FAC186FD29D2994900DF2802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC186FC29D2994900DF2802 /* AppDelegate.swift */; };
 		FAC186FF29D2994900DF2802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC186FE29D2994900DF2802 /* SceneDelegate.swift */; };
-		FAC1870129D2994900DF2802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1870029D2994900DF2802 /* ViewController.swift */; };
 		FAC1870429D2994900DF2802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1870229D2994900DF2802 /* Main.storyboard */; };
 		FAC1870729D2994900DF2802 /* QR_code.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC1870529D2994900DF2802 /* QR_code.xcdatamodeld */; };
 		FAC1870929D2994B00DF2802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1870829D2994B00DF2802 /* Assets.xcassets */; };
 		FAC1870C29D2994B00DF2802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1870A29D2994B00DF2802 /* LaunchScreen.storyboard */; };
+		FAC1871E29D29EB400DF2802 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1871D29D29EB400DF2802 /* QRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAC186F929D2994900DF2802 /* QR code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC186FC29D2994900DF2802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC186FE29D2994900DF2802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAC1870029D2994900DF2802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAC1870329D2994900DF2802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC1870629D2994900DF2802 /* QR_code.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QR_code.xcdatamodel; sourceTree = "<group>"; };
 		FAC1870829D2994B00DF2802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC1870B29D2994B00DF2802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC1870D29D2994B00DF2802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC1871D29D29EB400DF2802 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,96 @@
 		FAC186FB29D2994900DF2802 /* QR code */ = {
 			isa = PBXGroup;
 			children = (
-				FAC186FC29D2994900DF2802 /* AppDelegate.swift */,
-				FAC186FE29D2994900DF2802 /* SceneDelegate.swift */,
-				FAC1870029D2994900DF2802 /* ViewController.swift */,
-				FAC1870229D2994900DF2802 /* Main.storyboard */,
-				FAC1870829D2994B00DF2802 /* Assets.xcassets */,
-				FAC1870A29D2994B00DF2802 /* LaunchScreen.storyboard */,
+				FAC1871829D299A800DF2802 /* Application */,
+				FAC1871729D2999E00DF2802 /* Constant */,
+				FAC1871629D2999300DF2802 /* Extenstions */,
+				FAC1871529D2998900DF2802 /* Serecns */,
+				FAC1871429D2997E00DF2802 /* Storyboard */,
+				FAC1871329D2997300DF2802 /* Resourecs */,
 				FAC1870D29D2994B00DF2802 /* Info.plist */,
-				FAC1870529D2994900DF2802 /* QR_code.xcdatamodeld */,
 			);
 			path = "QR code";
+			sourceTree = "<group>";
+		};
+		FAC1871329D2997300DF2802 /* Resourecs */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1870829D2994B00DF2802 /* Assets.xcassets */,
+				FAC1870529D2994900DF2802 /* QR_code.xcdatamodeld */,
+			);
+			path = Resourecs;
+			sourceTree = "<group>";
+		};
+		FAC1871429D2997E00DF2802 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1870229D2994900DF2802 /* Main.storyboard */,
+				FAC1870A29D2994B00DF2802 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FAC1871529D2998900DF2802 /* Serecns */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1871929D29E8A00DF2802 /* QR View */,
+			);
+			path = Serecns;
+			sourceTree = "<group>";
+		};
+		FAC1871629D2999300DF2802 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FAC1871729D2999E00DF2802 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FAC1871829D299A800DF2802 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAC186FC29D2994900DF2802 /* AppDelegate.swift */,
+				FAC186FE29D2994900DF2802 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FAC1871929D29E8A00DF2802 /* QR View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1871C29D29E9F00DF2802 /* ViewModel */,
+				FAC1871B29D29E9900DF2802 /* Model */,
+				FAC1871A29D29E9400DF2802 /* View */,
+			);
+			path = "QR View";
+			sourceTree = "<group>";
+		};
+		FAC1871A29D29E9400DF2802 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1871D29D29EB400DF2802 /* QRViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC1871B29D29E9900DF2802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC1871C29D29E9F00DF2802 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC1870129D2994900DF2802 /* ViewController.swift in Sources */,
 				FAC1870729D2994900DF2802 /* QR_code.xcdatamodeld in Sources */,
 				FAC186FD29D2994900DF2802 /* AppDelegate.swift in Sources */,
 				FAC186FF29D2994900DF2802 /* SceneDelegate.swift in Sources */,
+				FAC1871E29D29EB400DF2802 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +379,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,8 +409,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

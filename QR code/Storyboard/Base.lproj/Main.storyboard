@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1nL-UY-kFh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QR Code-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QRViewController" customModule="QR_code" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-HB-ybi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6F-HB-ybi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FdB-Ah-NCQ"/>
+                            <constraint firstItem="A6F-HB-ybi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S6Y-UK-WI6"/>
+                            <constraint firstAttribute="bottom" secondItem="A6F-HB-ybi" secondAttribute="bottom" id="UY6-01-hHc"/>
+                            <constraint firstItem="A6F-HB-ybi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p11-zm-EoA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR Code" id="Nc6-iC-vfN">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="folder" catalog="system" id="mNl-xp-KG1">
+                            <connections>
+                                <action selector="qrFileBarButtonAction:" destination="BYZ-38-t0r" id="N3f-Xo-Sda"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="qrcode" catalog="system" id="rWF-wf-6uh">
+                            <connections>
+                                <action selector="qrBarButtonAction:" destination="BYZ-38-t0r" id="abj-iO-u6M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="qrBarButton" destination="rWF-wf-6uh" id="Qqe-WB-6Fv"/>
+                        <outlet property="qrFileBarButton" destination="mNl-xp-KG1" id="8lM-g2-TIz"/>
+                        <outlet property="qrlistTableView" destination="A6F-HB-ybi" id="FHm-C5-xEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jHy-Y7-vis">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1nL-UY-kFh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1I2-VZ-QCB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yof-rq-k0R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhY-oJ-7Ce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
